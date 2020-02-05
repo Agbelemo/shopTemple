@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+:root{
+    --font-family: 'Poppins', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+section{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.shopping .productText p:nth-child(1){
+    font-family: var(--montserrat);
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    color: rgb(61, 61, 61);
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.shopping .productText h2:nth-child(2){
+    font-family: var(--font-family);
+    margin-bottom: 15px;
+    font-size: 38px;
+    line-height: 41.8px;
+}
+
+.shopping .productText p:nth-child(3){
+    font-family: var(--montserrat);
+    margin-bottom: 15px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(61, 61, 61);
+    line-height: 27px;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 5em;
+    position: relative;
+}
+
+.products .productImg{
+    width: 20vw;
+    height: 25vw;
+    background: url('./img/brownBag.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.products:nth-child(2) .productImg{
+    width: 20vw;
+    height: 25vw;
+    background: url('./img/lady.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.products:nth-child(3) .productImg{
+    width: 20vw;
+    height: 25vw;
+    background: url('./img/carton\ skite.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.products:nth-child(4) .productImg{
+    width: 20vw;
+    height: 25vw;
+    background: url('./img/blue\ suit.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute;
+    width: 8vw;
+    height: 40px;
+    background: white;
+    margin: 0 auto;
+    margin-left: 13em;
+    bottom: 68px;
+    display: none;
+}
+
+.icons:hover{
+    display: block;
+}
+
+.icons div{
+    width: 20px;
+    height: 20px;
+    background: red;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+}
+
+.price .productItem h4{
+    margin-left: -25px;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+.price .productItem p{
+    margin-left: -25px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    margin-top: 5px;
+}
+
+.price .productCost{
+    margin-right: -55px;
+    font-family: var(--montserrat);
+}
