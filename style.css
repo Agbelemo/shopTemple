@@ -91,6 +91,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: 10s;
 }
 
 .icons{
@@ -101,21 +102,45 @@ section{
     height: 40px;
     background: white;
     margin: 0 auto;
-    margin-left: 13em;
+    margin-left: 13.1em;
     bottom: 68px;
     display: none;
+    transition: 10s;
 }
 
-.icons:hover{
+.productImg:hover + .icons{
     display: block;
+    transition-duration: 2s;
 }
 
 .icons div{
+    float: left;
     width: 20px;
     height: 20px;
     background: red;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 15px;
+}
+
+.icons div:nth-child(1){
+    background: url('./img/heart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icons div:nth-child(2){
+    background: url('./img/view.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icons div:nth-child(3){
+    background: url('./img/shopping-bag.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .price{
